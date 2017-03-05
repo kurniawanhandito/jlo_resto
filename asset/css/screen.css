@@ -1,0 +1,76 @@
+img{border:none;}
+pre{
+    display:block;
+    font:12px "Courier New", Courier, monospace;
+    padding:10px;
+    border:1px solid #bae2f0;
+    background:#e3f4f9;	
+    margin:.5em 0;
+    width:674px;
+}	
+#container{	
+    z-index: -8000;
+    margin:0 auto;
+    position:fixed;
+    text-align:left;
+    width: 100%;
+    background:#fff;		
+    margin-bottom:2em;
+}	
+#content{
+    position:relative;
+    z-index: -100;
+}			
+#slider li, #slider2 li{ 
+    /* 
+            define width and height of list item (slide)
+            entire slider area will adjust according to the parameters provided here
+    */ 
+    width:1350px;
+    height:1000px;
+    overflow:hidden; 
+}
+#prevBtn, #nextBtn, #slider1next, #slider1prev{ 
+    display:block;
+    width:30px;
+    height:77px;
+    position:absolute;
+    left:-30px;
+    top:71px;
+    z-index:1000;
+}	
+/*ol#controls{    
+        margin-top: -335px;
+    position: absolute;
+    margin-left: 1000px;
+    padding:0;
+    height:28px;	
+    display: block;
+    top: 0;
+}
+ol#controls li{
+    margin:0 10px 0 0;
+    padding:0;
+    float:left;
+    list-style:none;
+    height:28px;
+    line-height:28px;
+}
+ol#controls li a{
+    border-radius: 50%;
+    float:left;
+    height:20px;
+    line-height:28px;
+    background:#918f8c;
+    opacity: 0.3;
+    color:#555;
+    padding:0 10px;
+    text-decoration:none;
+    text-indent: -9999px;
+}
+ol#controls li.current a{
+    background:#FFF;
+    color:#fff;
+    opacity: 1;
+}
+ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}*/

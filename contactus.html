@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>.:Contact Us:.</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="asset/css/960.css">
+        <link rel="stylesheet" type="text/css" href="asset/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="asset/css/demo.css">
+        <link rel="stylesheet" type="text/css" href="asset/css/mystyle.css">
+        <link rel="stylesheet" type="text/css" href="asset/css/mystyle2.css">
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD1M1nYie09vxgSpksHy-MRA8hNEOmv400&sensor=false">
+        </script>
+        <script>
+            var myCenter = new google.maps.LatLng(-6.289364, 106.990936);
+            var marker;
+            function initialize()
+            {
+                var mapProp = {
+                    center: myCenter,
+                    zoom: 10,
+                    disableDefaultUI: true,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("googleMaps"), mapProp);
+                marker = new google.maps.Marker({
+                    position: myCenter,
+                    animation: google.maps.Animation.BOUNCE
+                });
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+    </head>
+    <body>
+        <div class="bg_about">
+            <div class="wrapper_up"></div>
+            <div class="container_12">
+                <div class="grid_3 logo">
+                    <img src="asset/images/logo.png" alt=""/>
+                </div>
+                <div class="grid_9 prefix_0 suffix_0 mainmenu">
+                    <div class="translate"><a href="#">English</a> | <a href="#">Indonesia</a></div>
+                    <br/><br/><br/><br/>
+                    <ul class="menu">
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                        <li><a href="newsevents.html">NEWS & EVENTS</a></li>
+                        <li><a href="promotions.html">PROMOTIONS</a></li>
+                        <li><a href="menu.html">MENU</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                    </ul>
+                </div>
+                <div class="container_12 content" style="height: 700px;">
+                    <div class="line_bor">
+                        <div class="grid_10 prefix_1 suffix_1">
+                            <div class="sub_content_header">
+                                CONTACT US
+                            </div>
+                            <div class="sub_content_line"></div>
+                        </div>
+                        <div class="grid_5 prefix_1 suffix_6">
+                            <div class="sub_content_maps" id="googleMaps"></div>
+                            <div class="sub_content_contact">
+                                <div class="sub_content_contact">
+                                    J’LO RESTO<br/>
+                                    JAKARTA LOUNGE
+                                </div>
+                                <div class="sub_content_sub_contact">
+                                    Jl. Tol Jagorawi KM 10+600A,<br/>
+                                    Jakarta Timur.<br/>
+                                    Ph.: 021 426 65 35<br/>
+                                    Fax.: 021 426 5567<br/>
+                                    email: <a href="mailto:csjlo@jloresto.com">csjlo@jloresto.com</a>
+                                </div><br/>
+                                <div class="sub_content_sosnet">
+                                    <a href="#facebook"><img src="asset/images/cp_fb.png" alt=""/></a>
+                                    <a href="#twitte"><img src="asset/images/cp_twit.png" alt=""/></a>
+                                    <a href="#path"><img src="asset/images/cp_path.png" alt=""/></a>
+                                    <a href="#flickr"><img src="asset/images/cp_flickr.png" alt=""/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid_5 prefix_6 suffix_1">
+                            <div class="sub_content_form">
+                                <form class="form_cp">
+                                    <fieldset>
+                                        <label id="yourname">Name :</label><br/>
+                                        <input type="text" id="iName" autofocus required><br/>
+                                        <label id="yourmail">Email :</label><br/>
+                                        <input type="email" id="iEmail" required><br/>
+                                        <label id="yourmessage">Message :</label><br/>
+                                        <textarea id="message" name="message" required></textarea>
+                                        <input id="clearbutton" type="reset" value="CLEAR" title="Clear">
+                                        <input id="sendbutton" type="submit" value="SEND MESSAGE" title="Send Message">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper_bot"></div>
+            <div class="footer">
+                <div class="container_12">  
+                    <ul class="foot_menu">
+                        <li><a class="sub_foot-menu" href="aboutus.html">ABOUT US</a></li>
+                        <li><a class="sub_foot-menu" href="disclaimer.html">DISCLAIMER</a></li>
+                        <li><a class="sub_foot-menu" href="privacy.html">PRIVACY POLICY</a></li>
+                        <li><a class="sub_foot-menu" href="terms.html">TERM OF US</a></li>
+                    </ul>
+                    <div class="grid_4 copy">&copy; J.Lo Resto. All Rights Reserved. Developed by IMAJIKU</div>
+                    <div class="grid_1">
+                        <img src="asset/images/facebook.png" alt="">
+                        <img src="asset/images/twitter.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
